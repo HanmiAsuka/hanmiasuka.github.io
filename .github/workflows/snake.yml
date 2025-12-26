@@ -16,13 +16,13 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Generate Snake Animation
-        uses: Platane/snk@3202fa1fd953af45b981536db116cfa3517bcda7
+        uses: ArthurLobopro/snk@9334117ff9691c24a139f6b79e0ef55f8738ff5e
         with:
           github_user_name: ${{ github.repository_owner }} 
           
           outputs: |
             static/images/github-snake.svg
-            static/images/github-snake-dark.svg?palette=github-dark
+            static/images/github-snake-dark.svg?color_snake=orange&color_dots=#f0fff4,#9be9a8,#40c463,#30a14e,#216e39
             static/images/ocean.svg?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
 
         env:
