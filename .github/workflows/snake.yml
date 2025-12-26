@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Generate Snake Animation
-        uses: Platane/snk@v3
+        uses: Platane/snk@3202fa1fd953af45b981536db116cfa3517bcda7
         with:
           github_user_name: ${{ github.repository_owner }} 
           
