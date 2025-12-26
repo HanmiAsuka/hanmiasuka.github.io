@@ -37,6 +37,10 @@ enableEmoji = true
 # otherwise it returns the section with the most pages.
 # mainSections = ["posts"]
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # -------------------------------------------------------------------------------------
 # Imaging Configuration
 # See: https://gohugo.io/configuration/imaging/
